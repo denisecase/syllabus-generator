@@ -55,4 +55,3 @@ excludes = [
 [citation]
 cff = "CITATION.cff"
 preferred = "repo"
-

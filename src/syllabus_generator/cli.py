@@ -36,10 +36,8 @@ def _collect_course_files(course_file_arg: str | None) -> list[Path]:
     if course_file_arg:
         return [Path(course_file_arg)]
 
-    return sorted(
-        p for p in COURSES_DIR.glob("*.toml")
-        if p.name != "instructor.toml"
-    )
+    return sorted(p for p in COURSES_DIR.glob("*.toml") if p.name != "instructor.toml")
+
 
 def main() -> int:
     """Run the CLI."""

@@ -13,4 +13,3 @@ Python projects may include a `py.typed` marker file (defined by PEP 561).
 
 Type checkers (Pyright, Mypy) trust inline type hints when this marker is present.
 The file is typically empty; comments are allowed.
-

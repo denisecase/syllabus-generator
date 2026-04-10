@@ -4,8 +4,8 @@
 [![Latest Release](https://img.shields.io/github/v/release/denisecase/syllabus-generator)](https://github.com/denisecase/syllabus-generator/releases)
 [![Docs](https://img.shields.io/badge/docs-live-blue)](https://denisecase.github.io/syllabus-generator/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/MIT)
-[![CI](https://github.com/denisecase/syllabus-generator/actions/workflows/ci-shared.yml/badge.svg?branch=main)](https://github.com/denisecase/syllabus-generator/actions/workflows/ci-shared.yml)
-[![Deploy-Docs](https://github.com/denisecase/syllabus-generator/actions/workflows/deploy-docs-shared.yml/badge.svg?branch=main)](https://github.com/denisecase/syllabus-generator/actions/workflows/deploy-docs-shared.yml)
+[![CI](https://github.com/denisecase/syllabus-generator/actions/workflows/ci-python-zensical.yml/badge.svg?branch=main)](https://github.com/denisecase/syllabus-generator/actions/workflows/ci-python-zensical.yml)
+[![Deploy-Docs](https://github.com/denisecase/syllabus-generator/actions/workflows/deploy-zensical.yml/badge.svg?branch=main)](https://github.com/denisecase/syllabus-generator/actions/workflows/deploy-zensical.yml)
 [![Check Links](https://github.com/denisecase/syllabus-generator/actions/workflows/links.yml/badge.svg)](https://github.com/denisecase/syllabus-generator/actions/workflows/links.yml)
 [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/denisecase/syllabus-generator/security)
 

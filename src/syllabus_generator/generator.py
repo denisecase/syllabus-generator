@@ -5,14 +5,11 @@ Generate syllabus documents from a Word template.
 
 from copy import deepcopy
 from pathlib import Path
-from typing import TYPE_CHECKING
 
 from docx import Document
-from docx.table import Table
+from docx.document import Document as DocumentType
+from docx.table import Table, _Cell
 from docx.text.paragraph import Paragraph
-
-if TYPE_CHECKING:
-    from docx.document import Document as DocumentType
 
 from syllabus_generator.constants import (
     GRADING_PLACEHOLDER,
@@ -24,17 +21,19 @@ from syllabus_generator.models import CourseData
 from syllabus_generator.naming import build_output_filename
 
 
-def _cell_text(cell: "docx.table._Cell") -> str:
+def _cell_text(cell: _Cell) -> str:
     """Return combined text for a cell."""
     return "\n".join(paragraph.text for paragraph in cell.paragraphs).strip()
 
 
-def _set_cell_text(cell: "docx.table._Cell", text: str) -> None:
+def _set_cell_text(cell: _Cell, text: str) -> None:
     """Replace all content in a cell with plain text."""
     cell.text = text
 
 
-def _find_table_with_placeholder(document: "DocumentType", placeholder: str) -> Table | None:
+def _find_table_with_placeholder(
+    document: DocumentType, placeholder: str
+) -> Table | None:
     """Find the first table containing the given placeholder."""
     for table in document.tables:
         for row in table.rows:
@@ -53,10 +52,11 @@ def _find_row_index_with_placeholder(table: Table, placeholder: str) -> int | No
     return None
 
 
-def _replace_learning_outcomes_table(document: "DocumentType", course: CourseData) -> None:
+def _replace_learning_outcomes_table(
+    document: DocumentType, course: CourseData
+) -> None:
     """Replace the learning outcomes marker row with one row per outcome."""
     desc_placeholder = "{{learning_outcomes_description}}"
-    assess_placeholder = "{{learning_outcomes_assessment}}"
 
     table = _find_table_with_placeholder(document, desc_placeholder)
     if table is None:
@@ -71,7 +71,6 @@ def _replace_learning_outcomes_table(document: "DocumentType", course: CourseDat
     parent_tbl = template_tr.getparent()
 
     for item in course.learning_outcomes:
-
         new_tr = deepcopy(template_tr)
         parent_tbl.insert(parent_tbl.index(template_tr), new_tr)
 
@@ -121,6 +120,7 @@ def _replace_everywhere(document: "DocumentType", replacements: dict[str, str]) 
 
     for table in document.tables:
         _replace_in_table(table, replacements)
+
 
 def _replace_grading_table(document: "DocumentType", course: CourseData) -> None:
     comp_placeholder = "{{grading_component}}"

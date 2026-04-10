@@ -3,8 +3,6 @@
 Load course data from TOML.
 """
 
-
-
 from pathlib import Path
 import tomllib
 
@@ -56,6 +54,7 @@ def _get_required_int(mapping: dict[str, object], key: str, section: str) -> int
             f"Found: {mapping[key]!r}"
         ) from exc
 
+
 def load_instructor_data(base_path: Path) -> Instructor:
     """Load instructor data from courses/instructor.toml."""
     instructor_path = base_path.parent / "instructor.toml"
@@ -70,11 +69,16 @@ def load_instructor_data(base_path: Path) -> Instructor:
 
     return Instructor(
         name=_get_required_str(instructor_raw, "instructor_name", "instructor"),
-        last_name=_get_required_str(instructor_raw, "instructor_last_name", "instructor"),
+        last_name=_get_required_str(
+            instructor_raw, "instructor_last_name", "instructor"
+        ),
         email=_get_required_str(instructor_raw, "instructor_email", "instructor"),
-        office_hours=_get_required_str(instructor_raw, "instructor_office_hours", "instructor"),
+        office_hours=_get_required_str(
+            instructor_raw, "instructor_office_hours", "instructor"
+        ),
         aside=_get_required_str(instructor_raw, "instructor_aside", "instructor"),
     )
+
 
 def load_toml_with_extends(
     path: Path, seen: set[Path] | None = None
@@ -101,6 +105,7 @@ def load_toml_with_extends(
     merged = dict(parent)
     merged.update({k: v for k, v in raw.items() if k != "extends"})
     return merged
+
 
 def load_course_data(path: Path) -> CourseData:
     """Load one course TOML file into CourseData."""

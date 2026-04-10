@@ -3,8 +3,6 @@
 Output filename generation.
 """
 
-
-
 import re
 
 from syllabus_generator.models import CourseData
