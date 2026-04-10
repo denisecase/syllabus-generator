@@ -13,7 +13,7 @@ type: software
 
 title: Syllabus Generator
 version: "0.1.0"
-date-released: "2026-04-09"
+date-released: "2026-04-10"
 
 authors:
   - family-names: Case
@@ -21,29 +21,22 @@ authors:
     orcid: "https://orcid.org/0000-0001-6165-7389"
     affiliation: "Northwest Missouri State University, USA"
 
-repository-code: "https://github.com/denisecase/syllabus_generator"
-url: "https://github.com/denisecase/syllabus_generator"
+repository-code: "https://github.com/denisecase/syllabus-generator"
+url: "https://github.com/denisecase/syllabus-generator"
 license: MIT
 
 abstract: |
-  Syllabus Generator is a Python package that uses data analytics
-  and continuous intelligence to create professional,
-  reproducible workflows for generating course syllabi.
-  It uses tools like GitHub, pre-commit, uv, ruff, and zensical
-  to ensure software quality and streamline the syllabus creation process.
-  This project is designed to support educators in efficiently
-  producing high-quality syllabi while adhering to best practices
-  in software development and data analytics.
+  Syllabus Generator is a Python package for generating course syllabi
+  from structured configuration files and a template.
 
 keywords:
   # identity
-  - data analytics
-  - continuous intelligence
+  - document generation
+  - templating
 
   # practices
-  - professional workflows
   - reproducible workflows
-  - software quality
+  - structured configuration
 
   # tools and ecosystem
   - python

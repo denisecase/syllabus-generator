@@ -2,7 +2,7 @@
 # .github/workflows/deploy-docs-shared.yml (Deploy Docs)
 # ============================================================
 # WHY: Calls org-level deploy;
-# maintained centrally in denisecase/.github.
+# maintained centrally in toy-gpt/.github.
 
 name: Deploy Docs
 
@@ -18,4 +18,4 @@ permissions:
 
 jobs:
   deploy:
-    uses: denisecase/.github/.github/workflows/deploy-zensical.yml@main
+    uses: toy-gpt/.github/.github/workflows/deploy-zensical.yml@main

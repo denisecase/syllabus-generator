@@ -5,6 +5,7 @@ Data models for syllabus generation.
 
 from dataclasses import dataclass, field
 
+
 @dataclass(slots=True)
 class LearningOutcome:
     """Student learning outcome."""

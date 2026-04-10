@@ -5,7 +5,6 @@ Load course data from TOML.
 
 
 
-from importlib.resources import path
 from pathlib import Path
 import tomllib
 
@@ -109,7 +108,7 @@ def load_course_data(path: Path) -> CourseData:
 
     instructor = load_instructor_data(path)
 
-    learning_outcomes_raw = raw.get("learning_outcomes", [])
+    learning_outcomes_raw: object = raw.get("learning_outcomes", [])
     grading_raw = raw.get("grading", [])
     schedule_raw = raw.get("schedule", [])
 

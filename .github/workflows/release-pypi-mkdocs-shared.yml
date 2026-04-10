@@ -2,7 +2,7 @@
 # .github/workflows/release-pypi.yml
 # ============================================================
 # WHY: Calls org-level deploy;
-# maintained centrally in denisecase/.github.
+# maintained centrally in toy-gpt/.github.
 
 name: Release PyPI
 
@@ -17,4 +17,4 @@ permissions:
 
 jobs:
   release:
-    uses: denisecase/.github/.github/workflows/release-pypi-shared.yml@main
+    uses: toy-gpt/.github/.github/workflows/release-pypi-shared.yml@main

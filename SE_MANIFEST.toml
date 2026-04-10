@@ -19,36 +19,11 @@ org = "denisecase"
 kind = "software"
 status = "academic"
 since = "2026"
-summary = "Toy language model training: unigram next-token predictor (single-token input)."
-
-[training]
-capability = "unigram"
-context_window = 1
-architecture = "softmax regression over vocabulary (toy scale)"
-task = "next-token prediction"
-
-[observation]
-corpus_id = "000"
-corpus_name = "cat_dog"
-corpus_path = "corpus/000_cat_dog.txt"
-corpus_note = "Deliberately neutral corpus to make the learning loop inspectable."
-
-[artifact]
-pretrained = true
-artifact_dir = "artifacts"
-artifacts_expected = [
-  "artifacts/00_meta.json",
-  "artifacts/01_vocabulary.csv",
-  "artifacts/02_model_weights.csv",
-  "artifacts/03_token_embeddings.csv",
-]
-evidence_expected = [
-  "outputs/train_log.csv",
-]
+summary = "Generate course syllabi from structured configuration files and a template."
 
 [layer]
-space = "Machine Learning"
-role = "post-secondary-education"
+space = "Automation and Tooling"
+role = "academic-tooling"
 
 [depends]
 required = [
@@ -57,16 +32,12 @@ required = [
   "git",
 ]
 optional = [
-  "mkdocs",
   "ruff",
   "pyright",
-  "pytest",
-  "lychee",
 ]
 
 [provides]
 artifacts = [
-  "ANNOTATIONS.md",
   "CITATION.cff",
   "LICENSE",
   "README.md",
@@ -75,24 +46,13 @@ artifacts = [
 
 [scope]
 includes = [
-  "basic Git workflows (clone, commit, push, pull)",
-  "use a local Python virtual environment (.venv) managed by uv",
-  "manage dependencies via pyproject.toml and uv",
-  "use external packages for logging and diagnostics",
-  "use professional IDE-based development workflows",
-  "train a toy next-token prediction model on a declared corpus",
-  "export inspectable pretrained model artifacts for downstream use",
+  "syllabus generation from structured course data",
+  "template-based document rendering",
 ]
 excludes = [
-  "production deployment systems",
-  "claims of semantic understanding or factual correctness",
-  "high-stakes decision support",
-  "training large-scale foundation models",
 ]
 
 [citation]
 cff = "CITATION.cff"
 preferred = "repo"
 
-[traceability]
-identifier_map = "none"

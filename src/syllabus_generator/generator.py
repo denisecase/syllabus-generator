@@ -24,12 +24,12 @@ from syllabus_generator.models import CourseData
 from syllabus_generator.naming import build_output_filename
 
 
-def _cell_text(cell) -> str:
+def _cell_text(cell: "docx.table._Cell") -> str:
     """Return combined text for a cell."""
     return "\n".join(paragraph.text for paragraph in cell.paragraphs).strip()
 
 
-def _set_cell_text(cell, text: str) -> None:
+def _set_cell_text(cell: "docx.table._Cell", text: str) -> None:
     """Replace all content in a cell with plain text."""
     cell.text = text
 
@@ -122,7 +122,7 @@ def _replace_everywhere(document: "DocumentType", replacements: dict[str, str]) 
     for table in document.tables:
         _replace_in_table(table, replacements)
 
-def _replace_grading_table(document: Document, course: CourseData) -> None:
+def _replace_grading_table(document: "DocumentType", course: CourseData) -> None:
     comp_placeholder = "{{grading_component}}"
 
     table = _find_table_with_placeholder(document, comp_placeholder)

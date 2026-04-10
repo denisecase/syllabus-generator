@@ -1,7 +1,7 @@
 # ============================================================
 # .github/workflows/ci-shared.yml (CI with shared config)
 # ============================================================
-# WHY: Calls org-level CI; maintained centrally in denisecase/.github.
+# WHY: Calls org-level CI; maintained centrally in toy-gpt/.github.
 
 name: CI
 
@@ -17,4 +17,4 @@ permissions:
 
 jobs:
   ci:
-    uses: denisecase/.github/.github/workflows/ci-org.yml@main
+    uses: toy-gpt/.github/.github/workflows/ci-org.yml@main
