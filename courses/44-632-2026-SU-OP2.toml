@@ -1,0 +1,91 @@
+course_prefix = "44"
+course_number = "632"
+course_sections = "80/81"
+course_year = "2026"
+course_yy = "26"
+course_season = "Summer"
+course_block = "OP2"
+course_name_line1 = "Business Intelligence"
+course_name_line2 = "and Analytics"
+course_short_name = "BI and Analytics"
+placement = "Take this course later in the program."
+prereqs = "Acceptance into the program."
+credits = "3"
+
+description = """
+This course will introduce students to various techniques available
+to extract suitable information (business intelligence, BI) from the
+large volume of data an organization can use to help managers make
+better business decisions.
+"""
+
+rationale = """
+All businesses generate data. Those who can learn from their data
+to improve their efficiency, products, services, and customer
+relationships can be more competitive, sustainable, and profitable.
+
+This course provides students with essential skills for transforming
+raw data into actionable insights, critical for informed data-driven
+decision-making. We learn about the common steps in data processing
+including data cleaning, transformation, and integration, and learn
+how to apply analytical tools to uncover patterns and trends. The
+course integrates practical experience with tools such as Python,
+SQL, and PowerBI, learning how to design and implement data
+warehouses, perform OLAP operations, and develop interactive
+reports. Additionally, we introduce big data concepts and scalable
+analytics, with an optional exploration of Spark for handling
+large datasets.
+"""
+
+materials_textbook = """
+No textbook required. Course materials will be available online and via the course site.
+"""
+
+materials_other = "Additional free resources as directed by instructor."
+
+[[learning_outcomes]]
+id = "LO1"
+description = "Describe business intelligence and analytics concepts, including languages, tools, and techniques and their role in achieving business KPI goals, targets, and decision-making."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO2"
+description = "Select and employ a variety of languages, tools, and techniques for business intelligence processes including version control, data collection, cleaning, ETL, Data Warehousing, OLAP, and data transformation and analysis to address diverse data scenarios in a business context."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO3"
+description = "Apply BI languages, tools, and techniques to ensure data quality and usability, perform data analyses, uncover actionable insights, and support business decision-making."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO4"
+description = "Plan and execute BI analytics project, applying skills in real-world contexts, including project planning, data collection, cleaning, transformation, analysis, and presentation of findings to support business decisions."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[grading]]
+component = "Core Competencies: Preview & Plan"
+weight = 10
+
+[[grading]]
+component = "GUIDEs: Explore & Learn"
+weight = 20
+
+[[grading]]
+component = "Core Competencies: Set Up & Run"
+weight = 25
+
+[[grading]]
+component = "Projects: Apply & Share"
+weight = 45
+
+
+[modules]
+module0 = "Review course administration and policies (complete this first)"
+module1 = "BI Fundamentals, projects and Data-Driven Decision Making (DDDM). Tools setup."
+module2 = "Data exploration and mining."
+module3 = "Data collection, cleaning, and EVTL."
+module4 = "Data warehousing, star schemas & decision support."
+module5 = "Scalable BI: Big Data, cloud, & Power BI online."
+module6 = "BI Insights, OLAP, slicing & dicing, storytelling."
+module7 = "Integrated portfolio; BI ethics, AI, & custom BI decision support project."

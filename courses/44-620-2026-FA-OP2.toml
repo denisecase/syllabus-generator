@@ -1,0 +1,6 @@
+extends = "44-620-2026-SP-OP2.toml"
+
+course_year = "2026"
+course_yy = "26"
+course_season = "Fall"
+course_block = "OP2"

@@ -1,0 +1,57 @@
+# ============================================================
+# CITATION.cff (How to cite this project)
+# ============================================================
+
+# REQ.UNIVERSAL: Professional open projects SHOULD include CITATION.cff.
+# WHY: Support correct citation and attribution.
+# ALT: Internal or private repositories may omit citation metadata.
+# CUSTOM: Update author, repository, license, and keyword fields as needed.
+# USAGE: See https://citation-file-format.github.io/ for details.
+
+cff-version: "1.2.0"
+type: software
+
+title: Syllabus Generator
+version: "0.1.0"
+date-released: "2026-04-09"
+
+authors:
+  - family-names: Case
+    given-names: Denise M.
+    orcid: "https://orcid.org/0000-0001-6165-7389"
+    affiliation: "Northwest Missouri State University, USA"
+
+repository-code: "https://github.com/denisecase/syllabus_generator"
+url: "https://github.com/denisecase/syllabus_generator"
+license: MIT
+
+abstract: |
+  Syllabus Generator is a Python package that uses data analytics
+  and continuous intelligence to create professional,
+  reproducible workflows for generating course syllabi.
+  It uses tools like GitHub, pre-commit, uv, ruff, and zensical
+  to ensure software quality and streamline the syllabus creation process.
+  This project is designed to support educators in efficiently
+  producing high-quality syllabi while adhering to best practices
+  in software development and data analytics.
+
+keywords:
+  # identity
+  - data analytics
+  - continuous intelligence
+
+  # practices
+  - professional workflows
+  - reproducible workflows
+  - software quality
+
+  # tools and ecosystem
+  - python
+  - git
+  - github
+  - pre-commit
+  - uv
+  - ruff
+  - zensical
+
+message: "If using this project, please cite it as described in this file."

@@ -1,0 +1,82 @@
+course_prefix = "44"
+course_number = "620"
+course_sections = "80/81"
+course_year = "2026"
+course_yy = "26"
+course_season = "Spring"
+course_block = "OP2"
+course_name_line1 = "Web Mining & Applied Natural"
+course_name_line2 = "Language Processing (NLP)"
+course_short_name = "Web Mining & NLP"
+placement = "Take this course any time after completing 44-608 Data Analytics Fundamentals."
+prereqs = "44-608 or instructor permission."
+credits = "3"
+
+description = """
+This course introduces accessing, manipulating, and presenting data from
+a variety of web-based sources. APIs (social media) and web scraping will be used as a
+platform to practice the fundamentals of applied Natural Language Processing. Students
+will gain experience extracting and presenting information from semi-structured and
+unstructured data sources.
+"""
+
+rationale = """
+The internet can provide a wealth of information; this data is often not available in a
+simple structured (tabular) format, but instead unstructured data such as natural
+languages and images. This course aims to provide students with foundational tools for
+obtaining and extracting information from unstructured data sources. Visualization will
+be used throughout for students to give context and meaning to the information they extract.
+"""
+
+materials_textbook = """
+No textbook required. Course materials will be available online and via the course site.
+"""
+
+materials_other = "Additional free resources as directed by instructor."
+
+[[learning_outcomes]]
+id = "LO1"
+description = "Describe the systems, data sources, and processing workflows involved in modern web mining and natural language processing."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO2"
+description = "Select and apply appropriate models, tools, techniques, and software libraries to acquire, process, and analyze web and text data, including managing dependencies and using version control to support reproducible work."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO3"
+description = "Design an analytics solution or processing pipeline that addresses a NLP objective given available data sources, constraints, and analytical goals."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO4"
+description = "Implement targeted web mining and NLP pipelines, interpret and communicate analytical results, and plan for maintenance, refinement, and evolution of the solution over time."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[grading]]
+component = "Core Competencies: Preview & Plan"
+weight = 10
+
+[[grading]]
+component = "GUIDEs: Explore & Learn"
+weight = 20
+
+[[grading]]
+component = "Core Competencies: Set Up & Run"
+weight = 25
+
+[[grading]]
+component = "Projects: Apply & Share"
+weight = 45
+
+
+[modules]
+module0 = "Review course administration and policies (complete this first)"
+module1 = "Set up Python environment, projects, notebooks, and Git workflow for reproducible analysis."
+module2 = "Work with Python data structures and text data; tokenize and preprocess text."
+module3 = "Explore and interpret text data using visualization."
+module4 = "Acquire structured text from APIs and process JSON responses for NLP workflows."
+module5 = "Extract data from web documents using HTML, CSS, and DOM structure."
+module6 = "Clean text and build NLP pipelines to analyze web text."
+module7 = "Build an integrated web mining and NLP portfolio; explore embeddings, retrieval, and modern NLP tools."

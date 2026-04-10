@@ -1,0 +1,105 @@
+course_prefix = "44"
+course_number = "661"
+course_sections = "80/81"
+course_year = "2026"
+course_yy = "26"
+course_season = "Fall"
+course_block = "OP1"
+course_name_line1 = "Databases"
+course_name_line2 = "for Analytics"
+course_short_name = "DB for Analytics"
+placement = "Take this course early in the program."
+prereqs = "Acceptance into the program."
+credits = "3"
+
+description = """
+This course explores data from both a storage and analytical perspective.
+Topics such as relational and non-relational database functionality
+and constraints, local and cloud database considerations, relevant
+data types, and data manipulation are included. Students will receive
+hands-on experience working with relational, non-relational databases
+and data manipulation tools.
+"""
+
+rationale = """
+Applied data analytics often requires interfacing with a variety of
+data and databases. These crucial topics lay a solid foundation
+for success in subsequent courses.
+"""
+
+materials_textbook = """
+Optional resource (recommended for in-depth understanding).
+SQL for Data Analytics: Analyze data effectively, uncover insights
+and master advanced SQL for real-world applications (4th Ed 2025)
+or Malik, U., Goldwasser, M., & Johnston, B. (2020). The Applied SQL
+Data Analytics Workshop: A Quick, Interactive Approach to Learning
+Analytics with SQL (2nd Ed 2020). Packt Publishing or Amazon.
+"""
+
+materials_other = "Additional free resources as directed by instructor."
+
+[[learning_outcomes]]
+id = "LO1"
+description = "Describe the principles, data models, and workflows involved in relational databases, NoSQL systems, data warehouses, and diverse modern data sources."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO2"
+description = "Select and apply appropriate tools, query methods, and data handling techniques to create, query, and transform relational and non-relational data, including importing, exporting, and assessing data quality."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO3"
+description = "Design data solutions using relational and non-relational structures that address a defined data management, reporting, or analytics objective."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO4"
+description = "Implement database and data processing workflows, generate and communicate query-based results."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[grading]]
+component = "Core Competencies: Preview & Plan"
+weight = 10
+
+[[grading]]
+component = "GUIDEs: Explore & Learn"
+weight = 20
+
+[[grading]]
+component = "Core Competencies: Set Up & Run"
+weight = 25
+
+[[grading]]
+component = "Projects: Apply & Share"
+weight = 45
+
+# Modules 2, 4, 5, and 7 are the ones meaningfully impacted by the new edition
+# Module 2 New book adds:
+# CTEs (explicit)
+# window functions (stronger emphasis)
+# analytics-oriented query building
+# Module 3
+# focuses more on complex data types inside SQL (JSON, arrays)
+# less emphasis on separate NoSQL systems
+# Module 4 New book adds:
+# COPY / data loading workflows
+# Python integration explicitly
+# automation emphasis
+# Module 5 New book strongly expands:
+# JSON + arrays
+# text
+# geospatial
+# time-series
+# advanced data types
+
+
+[modules]
+module0 = "Review course administration and policies (complete this first)"
+module1 = "Fundamentals of relational databases; tables, primary keys, CRUD operations, and core data types (numeric, character, date/time)."
+module2 = "SQL for analytics; SELECT, joins, GROUP BY, basic CTEs, and CASE (Ch 6-9). Tools: DuckDB, Python, .sql files."
+module3 = "Working with semi-structured data; JSON basics and simple extraction, plus conceptual overview of non-relational systems (Ch 11-12). Tools: DuckDB, Python (JSON)."
+module4 = "Moving and preparing data; import/export (COPY), handling nulls, and basic Python integration (Ch 3-4). Tools: DuckDB, Postgres, Python."
+module5 = "Data types for analytics; text and date/time handling, with simple time-based analysis (Ch 12-13). Tools: DuckDB, Python."
+module6 = "Analytical SQL patterns; aggregations, multi-step queries with CTEs, introduction to window functions, and building reusable queries for reporting. Tools: DuckDB, Postgres."
+module7 = "Integrated portfolio; working with diverse data sources (IoT, event hubs, data lakes, streaming data) and planning for evolution of data systems."

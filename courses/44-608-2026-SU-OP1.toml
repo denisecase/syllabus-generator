@@ -1,0 +1,88 @@
+course_prefix = "44"
+course_number = "608"
+course_sections = "80/81"
+course_year = "2026"
+course_yy = "26"
+course_season = "Summer"
+course_block = "OP1"
+course_name_line1 = "Data Analytics"
+course_name_line2 = "Fundamentals"
+course_short_name = "DA Fundamentals"
+placement = "Take this course first in the program."
+prereqs = "Acceptance into the program."
+credits = "3"
+
+description = """
+This course provides foundational skills needed in subsequent courses
+and includes an introduction to descriptive and predictive analytics.
+It includes a review of basic statistics, and introduction to key tools
+such as Python, Excel, and Structured Query Language. The course focuses
+on key foundations of importing, querying, and processing data and
+characterizing and visualizing information.
+"""
+
+rationale = """
+Applied data analytics covers multiple disciplines and skills, including
+statistics, computer science, data processing, programming with Python,
+and more. These crucial topics lay a solid foundation for success in
+subsequent courses.
+"""
+
+materials_textbook = """
+Intro to Python for Computer Science and Data Science: Learning
+to Program with AI, Big Data and The Cloud, by Paul J. Deitel,
+Harvey M. Deitel, 2020, Pearson, ISBN 9780135404676 (link).
+Digital or paper / buy or rent / new or used / no access code required.
+Please get a copy before class starts; we have short activities that
+we'll start on Day 1.
+"""
+
+materials_other = "Additional free resources as directed by instructor."
+
+[modules]
+module0 = "Review course administration and policies (complete this first)"
+module1 = "Use professional Python and apply descriptive statistics (Ch 2)"
+module2 = "Write control flow and functions; calculate measures of central tendency and dispersion (Ch 3-4)"
+module3 = "Use core data structures and ingest data from CSV, JSON, Excel, and text (Ch 5-6)"
+module4 = "Work with arrays and strings; analyze tabular data with pandas and create charts (Ch 7-8)"
+module5 = "Query relational data using SQL (Ch 9, 17.2)"
+module6 = "Apply exploratory data analytics in a project"
+module7 = "Analyze time series and apply simple linear regression for basic predictive analytics (Ch 10.16, 15.4)"
+
+
+[[learning_outcomes]]
+id = "LO1"
+description = "Apply basic concepts of descriptive analytics including variance and standard deviation."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO2"
+description = "Perform basic data manipulation and processing."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO3"
+description = "Ingest, query, and analyze data."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO4"
+description = "Apply basic concepts of predictive analytics including simple linear regression."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[grading]]
+component = "Core Competencies: Preview & Plan"
+weight = 10
+
+[[grading]]
+component = "GUIDEs: Explore & Learn"
+weight = 20
+
+[[grading]]
+component = "Core Competencies: Set Up & Run"
+weight = 25
+
+[[grading]]
+component = "Projects: Apply & Share"
+weight = 45
+

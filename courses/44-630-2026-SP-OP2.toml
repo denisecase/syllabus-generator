@@ -1,0 +1,83 @@
+course_prefix = "44"
+course_number = "630"
+course_sections = "80/81"
+course_year = "2026"
+course_yy = "26"
+course_season = "Spring"
+course_block = "OP2"
+course_name_line1 = "Continuous"
+course_name_line2 = "Intelligence"
+course_short_name = "Continuous Intelligence"
+placement = "Take this course in the middle of the degree program."
+prereqs = "Acceptance into the program."
+credits = "3"
+
+description = """
+This course offers an introduction to the concepts and implementation of
+systems for continuous intelligence and interactive analytics. It
+includes ingesting and processing raw data and presenting evolving
+analytics in engaging, easy-to-understand, actionable formats.
+"""
+
+rationale = """
+Massive amounts of live data must be quickly processed and provided to managers to
+make immediate informed decisions. Continuous intelligence systems monitor, detect,
+ and respond to changing conditions in real time. Analysts provide judgment regarding
+ measuring useful signals, detecting state changes, and making better decisions
+ using continuous data. This course introduces processing data in motion and develops
+ durable skills transferable across domains and tools in conjunction with AI-assisted
+ analytics.
+"""
+
+materials_textbook = """
+There is no required textbook for this course.
+"""
+
+materials_other = "Additional free resources as directed by instructor."
+
+[[learning_outcomes]]
+id = "LO1"
+description = "Select and apply appropriate tools, architectures, metrics, and techniques for continuous intelligence scenarios under defined constraints."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO2"
+description = "Select and apply appropriate models, tools, techniques, and software libraries to acquire, process, and analyze web and text data, including managing dependencies and using version control to support reproducible work."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO3"
+description = "Design continuous intelligence components and monitoring pipelines that address defined monitoring and decision-making requirements."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO4"
+description = "Implement and evolve continuous intelligence systems that operate correctly, generate interpretable evidence, and adapt to changing data, requirements, or scale."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[grading]]
+component = "Core Competencies: Preview & Plan"
+weight = 10
+
+[[grading]]
+component = "Core Competencies: Set Up & Run"
+weight = 20
+
+[[grading]]
+component = "GUIDEs: Explore & Learn"
+weight = 25
+
+[[grading]]
+component = "Projects: Apply & Share"
+weight = 45
+
+
+[modules]
+module0 = "Review course administration and policies (complete this first)"
+module1 = "Introduction to continuous intelligence (CI) and CI projects. Reason about continuous systems vs. batch snapshots. Set up machine. Set up and run example project."
+module2 = "Distinguish signal from noise and detect anomalies."
+module3 = "Define what to measure: feature engineering and signal design."
+module4 = "Reason about time as a variable: time series and rolling windows."
+module5 = "Detect drift and identify when a system has changed state."
+module6 = "Assess system state in a continuous system; integrate signals, apply thresholds, and interpret results."
+module7 = "Integrated continuous intelligence portfolio; communicate findings and insights effectively."

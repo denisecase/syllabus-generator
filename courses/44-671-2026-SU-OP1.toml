@@ -1,0 +1,85 @@
+course_prefix = "44"
+course_number = "671"
+course_sections = "80/81"
+course_year = "2026"
+course_yy = "26"
+course_season = "Summer"
+course_block = "OP1"
+course_name_line1 = "Streaming"
+course_name_line2 = "Data"
+course_short_name = "Streaming Data"
+placement = "Take this course later in the degree program."
+prereqs = "44-608 Data Analytics Fundamentals is strongly recommended if new to programming and Python."
+credits = "3"
+
+description = """
+This course provides an introduction to the principles, properties, and
+tools of streaming data in the context of analytics. Students will learn
+how to understand, process, extract insights, and respond to massive
+volume and high-rate data generated from a variety of sources such as
+real-time business transaction and social media networks using
+streaming data models, approaches, languages, and processing tools.
+"""
+
+rationale = """
+Streaming data is unbounded data in motion, generated continuously at
+high volume and velocity. This course examines core challenges in
+processing streaming data and introduces practical tools and techniques
+for building producer-consumer pipelines. Students implement and run
+professional projects and complete custom applications. By the end of
+the course, students can explain producer-consumer solutions, implement
+data producers and consumers, and evaluate modern streaming technologies.
+"""
+
+materials_textbook = """
+No textbook required. Course materials will be available online and via the course site.
+"""
+
+materials_other = "Additional free resources as directed by instructor."
+
+[[learning_outcomes]]
+id = "LO1"
+description = "Describe the fundamental principles and tools of streaming analytics, including data-in-motion concepts, real-time processing, and the roles of producers and consumers in data pipelines."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO2"
+description = "Select and employ appropriate tools and techniques to produce, consume, analyze, and visualize streaming data using Python, Kafka, GitHub, and professional analytics workflows."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO3"
+description = "Design and apply analytics and visualization techniques to extract insights from structured and semi-structured streaming data, including implementing data producers and consumers."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO4"
+description = "Plan and execute comprehensive streaming data pipelines, integrating real-time data flows with data-at-rest systems, customized analytics, and professional reporting."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[grading]]
+component = "Core Competencies: Preview & Plan"
+weight = 10
+
+[[grading]]
+component = "GUIDEs: Explore & Learn"
+weight = 20
+
+[[grading]]
+component = "Core Competencies: Set Up & Run"
+weight = 25
+
+[[grading]]
+component = "Projects: Apply & Share"
+weight = 45
+
+
+[modules]
+module0 = "Course administration and policies (complete this first)."
+module1 = "Foundations of streaming analytics; data in motion, producer-consumer pipelines, and core concepts (topics, partitions, offsets)."
+module2 = "Producing and consuming streaming data."
+module3 = "Structured (CSV) and semi-structured (JSON) streaming data (schemas, consistency, reliability)."
+module4 = "Analyzing and visualizing streaming data (time windows and rolling metrics)."
+module5 = "Enriching streaming data with static (reference) data and integrating with data-at-rest systems."
+module6 = "Building and customizing an end-to-end streaming pipeline."
+module7 = "Integrated streaming portfolio; refine project work and plan for sustainability and evolution of streaming systems."

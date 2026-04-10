@@ -1,0 +1,20 @@
+# ============================================================
+# .github/workflows/release-pypi.yml
+# ============================================================
+# WHY: Calls org-level deploy;
+# maintained centrally in denisecase/.github.
+
+name: Release PyPI
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  release:
+    uses: denisecase/.github/.github/workflows/release-pypi-shared.yml@main

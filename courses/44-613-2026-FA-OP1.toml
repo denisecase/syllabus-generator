@@ -1,0 +1,86 @@
+course_prefix = "44"
+course_number = "613413"
+course_sections = "808103"
+course_year = "2026"
+course_yy = "26"
+course_season = "Fall"
+course_block = "OP1"
+course_name_line1 = "Data"
+course_name_line2 = "Visualization"
+course_short_name = "Data Viz"
+placement = "Take this course early in the program."
+prereqs = "Acceptance into the program."
+credits = "3"
+
+description = """
+This course covers the design and development of exploratory diagrams and
+graphics for various data sets. The course may include concepts such as
+chart and graph design, networks, topological graphs, display of
+multi-dimensional data, effective use of space and color, animations,
+interactive visualizations, mapping, cartography, web data acquisition,
+and advanced visualization tools.
+
+"""
+
+rationale = """
+This course develops the ability to transform data into effective
+visual representations that support analysis and decision-making.
+Students learn how to select, design, and evaluate visualizations,
+moving from data preparation to interactive dashboards and data
+storytelling. Emphasis is placed on choosing appropriate visual
+forms, avoiding misleading representations, and communicating
+insights clearly and professionally.
+"""
+
+materials_textbook = """
+There is no required textbook for this course. We will use Excel, Tableau, Tableau Data Prep, and Tableau Public. Course materials will be available online and via the course site.
+"""
+
+materials_other = "Additional free resources as directed by instructor."
+
+[[learning_outcomes]]
+id = "LO1"
+description = "Describe core data visualization principles, terminology, tools, and design considerations, including effective and ineffective visual practices."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO2"
+description = "Prepare and analyze data for visualization, including cleaning, structuring, and identifying appropriate variables and relationships."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO3"
+description = "Select and apply appropriate visualization techniques and tools to represent data accurately and effectively across different data types and domains."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[learning_outcomes]]
+id = "LO4"
+description = "Design and implement interactive dashboards and visualizations, and communicate insights through clear, structured data stories."
+assessment = ["Core competencies", "Discussions", "GUIDEs", "Projects"]
+
+[[grading]]
+component = "Core Competencies: Preview & Plan"
+weight = 10
+
+[[grading]]
+component = "GUIDEs: Explore & Learn"
+weight = 20
+
+[[grading]]
+component = "Core Competencies: Set Up & Run"
+weight = 25
+
+[[grading]]
+component = "Projects: Apply & Share"
+weight = 45
+
+
+[modules]
+module0 = "Review course administration and policies (complete this first)"
+module1 = "Visualization fundamentals; tools setup and principles of visual communication and storytelling."
+module2 = "Data preparation for visualization; cleaning, structuring, and understanding attributes and tables."
+module3 = "Foundations of visual analysis; selecting and implementing appropriate chart types."
+module4 = "Advanced charting and comparison; refining visual choices and evaluating effectiveness."
+module5 = "Geospatial visualization; mapping, spatial data, and cartographic considerations."
+module6 = "Dashboard and storyboard design; integrating visuals into interactive analytical views."
+module7 = "Integrated portfolio; present visualizations and dashboards for publication."

@@ -1,0 +1,13 @@
+[instructor]
+instructor_aside = """
+Aside: I spent 25 years designing and building analytics for infrastructure industries
+before switching to education. I love learning and I hope you will, too. Our goal is
+to help you develop durable skills for professional analytics in the age of generative AI.
+Whether you're just out of school or back after a bit of a break, I hope you find the
+skills you'll gain to be engaging and powerful. Curiosity, resourcefulness, and tenacity
+will help. Collaboration and creativity are encouraged.
+"""
+instructor_email = "denise@nwmissouri.edu"
+instructor_last_name = "Case"
+instructor_name = "Dr. Denise Case"
+instructor_office_hours = "See course site"
