@@ -113,7 +113,7 @@ def _replace_in_table(table: Table, replacements: dict[str, str]) -> None:
                 _replace_in_table(nested_table, replacements)
 
 
-def _replace_everywhere(document: "DocumentType", replacements: dict[str, str]) -> None:
+def _replace_everywhere(document: DocumentType, replacements: dict[str, str]) -> None:
     """Replace placeholders in paragraphs and tables."""
     for paragraph in document.paragraphs:
         _replace_in_paragraph(paragraph, replacements)
@@ -122,7 +122,7 @@ def _replace_everywhere(document: "DocumentType", replacements: dict[str, str]) 
         _replace_in_table(table, replacements)
 
 
-def _replace_grading_table(document: "DocumentType", course: CourseData) -> None:
+def _replace_grading_table(document: DocumentType, course: CourseData) -> None:
     comp_placeholder = "{{grading_component}}"
 
     table = _find_table_with_placeholder(document, comp_placeholder)
