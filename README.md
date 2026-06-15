@@ -40,7 +40,8 @@ Just combine, e.g. `613413` and `808103`.
 
 ## Adding a New Data Field
 
-To add a new field (e.g., `course_short_name`, `materials_textbook`, `materials_other`), follow these steps.
+To add a new field (e.g., `course_short_name`, `materials_textbook`, `materials_other`),
+follow these steps.
 
 ### 1. Add to the data file (TOML)
 
@@ -179,11 +180,17 @@ code .
 ### In a VS Code terminal
 
 ```shell
+# reset uv cache only after suspected cache corruption or strange dependency errors
+# uv cache clean
+
 uv self update
 uv python pin 3.14
+uv lock --upgrade
 uv sync --extra dev --extra docs --upgrade
 
 uvx pre-commit install
+uvx pre-commit autoupdate
+
 git add -A
 uvx pre-commit run --all-files
 
